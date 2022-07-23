@@ -1,0 +1,21 @@
+/* Variables */
+:root {
+  /* Colors */
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-blue: #0065fc;
+  --color-light-blue: #deebff;
+  --color-light-gray: #f2f2f2;
+
+  /* Font size */
+  --fs-14: 14px;
+  --fs-16: 16px;
+  --fs-20: 20px;
+
+  /* Font weight */
+  --fw-400: 400;
+  --fw-700: 700;
+
+  /* Font family */
+  --ff-sans: "Raleway", sans-serif;
+}
