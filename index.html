@@ -1,12 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
-    <!-- Metas -->
+    <!-- Primary meta tags -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- Document title -->
     <title>Booki - Trouvez votre hébergement pour des vacances de rêve</title>
 
     <!-- Favicon -->
@@ -31,28 +29,124 @@
     />
 
     <!-- Styles -->
-    <link rel="stylesheet" href="./styles/reset.css" />
-    <link rel="stylesheet" href="./styles/main.css" />
-    <link
-      rel="stylesheet"
-      href="./styles/screen-sm.css"
-      media="(max-width: 576px)"
-    />
-    <link
-      rel="stylesheet"
-      href="./styles/screen-md.css"
-      media="(max-width: 768px)"
-    />
-    <link
-      rel="stylesheet"
-      href="./styles/screen-lg.css"
-      media="(max-width: 1024px)"
-    />
-    <link
-      rel="stylesheet"
-      href="./styles/screen-xl.css"
-      media="(max-width: 1280px)"
-    />
+    <link rel="stylesheet" href="./styles.css" />
   </head>
-  <body></body>
+  <body>
+    <!-- Header start -->
+    <header id="header">
+      <div class="container flex items-center justify-between">
+        <img
+          src="./images/logos/booki-logo.svg"
+          alt="Booki logo"
+          class="header-logo"
+        />
+        <nav class="header-nav flex text-14">
+          <a href="#lodgings" class="nav-link" data-active="true">
+            Hébergements
+          </a>
+          <a href="#activities" class="nav-link" data-active="false">
+            Activités
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main id="main">
+      <!-- Hero -->
+      <section id="hero" class="container flex flex-col">
+        <!-- Hero header -->
+        <header class="hero-header flex flex-col">
+          <h1 class="text-20 bold">
+            Trouvez votre hébergement pour des vacances de rêve
+          </h1>
+          <p class="">En plein centre ville ou pleine nature</p>
+        </header>
+
+        <!-- Search form -->
+        <form action="#" method="#" class="search flex">
+          <div class="search-label-input flex">
+            <input
+              type="search"
+              placeholder="Marseille, France"
+              id="search-input"
+              class="bold color-blue"
+            />
+            <label
+              for="search-input"
+              class="search-label flex items-center justify-center bg-light-gray"
+            >
+              <i class="fa-solid fa-location-dot"></i>
+            </label>
+          </div>
+          <button type="submit" class="search-button bg-blue color-white">
+            <span class="bold text-14">Rechercher</span>
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+
+        <!-- Filters -->
+        <div class="filters flex items-center">
+          <h6 class="bold text-14">Filtres</h6>
+
+          <!-- Tags -->
+          <div class="tags flex">
+            <!-- Tag -->
+            <a href="#" class="tag flex items-center">
+              <span
+                class="tag-icon-wrapper flex items-center justify-center bg-light-blue color-blue"
+              >
+                <i class="fa-solid fa-money-bill-wave"></i>
+              </span>
+              <span class="tag-label bold text-14"> Économique </span>
+            </a>
+
+            <!-- Tag -->
+            <a href="#" class="tag flex items-center">
+              <span
+                class="tag-icon-wrapper flex items-center justify-center bg-light-blue color-blue"
+              >
+                <i class="fa-solid fa-child-reaching"></i>
+              </span>
+              <span class="tag-label bold text-14"> Familial </span>
+            </a>
+
+            <!-- Tag -->
+            <a href="#" class="tag flex items-center">
+              <span
+                class="tag-icon-wrapper flex items-center justify-center bg-light-blue color-blue"
+              >
+                <i class="fa-solid fa-heart"></i>
+              </span>
+              <span class="tag-label bold text-14"> Romantique </span>
+            </a>
+
+            <!-- Tag -->
+            <a href="#" class="tag flex items-center">
+              <span
+                class="tag-icon-wrapper flex items-center justify-center bg-light-blue color-blue"
+              >
+                <i class="fa-solid fa-dog"></i>
+              </span>
+              <span class="tag-label bold text-14"> Animaux autorisés </span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Results -->
+        <div class="results flex items-center">
+          <i class="fa-solid fa-circle-info color-blue"></i>
+          <p class="text-14">
+            Plus de 500 logements sont disponible dans cette ville
+          </p>
+        </div>
+      </section>
+
+      <!-- City -->
+
+      <!-- Activities -->
+    </main>
+
+    <!-- Footer -->
+  </body>
 </html>
