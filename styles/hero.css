@@ -1,0 +1,15 @@
+#hero {
+  gap: 36px;
+  margin-bottom: 40px;
+}
+
+.hero-header {
+  gap: 12px;
+}
+
+@media screen and (max-width: 512px) {
+  #hero {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+}
