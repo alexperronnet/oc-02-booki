@@ -1,0 +1,42 @@
+.city {
+  gap: 40px;
+}
+
+.city-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 40px;
+}
+
+.city-more {
+  gap: 2px;
+  width: fit-content;
+}
+
+.city-more::after {
+  content: "\f178";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  opacity: 0;
+  transition: all 200ms ease-out;
+}
+
+.city-more:hover {
+  color: var(--color-blue);
+}
+
+.city-more:hover:after {
+  opacity: 1;
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+  .city-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media screen and (max-width: 672px) {
+  .city-grid {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+}
