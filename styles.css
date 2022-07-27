@@ -8,10 +8,11 @@
 @import url("./styles/filters.css");
 @import url("./styles/results.css");
 @import url("./styles/lodgings.css");
-@import url("./styles/city.css");
 @import url("./styles/city-card.css");
-@import url("./styles/popular.css");
+@import url("./styles/city.css");
 @import url("./styles/popular-card.css");
+@import url("./styles/popular.css");
+@import url("./styles/activities-card.css");
 @import url("./styles/activities.css");
 @import url("./styles/footer.css");
 
