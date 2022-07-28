@@ -32,8 +32,11 @@
 }
 
 .tag:hover .tag-icon-wrapper {
-  color: var(--color-white);
   background-color: var(--color-blue);
+}
+
+.tag:hover .icon-18 {
+  fill: var(--color-white);
 }
 
 @media screen and (max-width: 896px) {

@@ -64,15 +64,6 @@
     <link rel="icon" type="image/svg+xml" href="./static/favicon.svg" />
     <link rel="icon" type="image/png" href="./static/favicon.png" />
 
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-
     <!-- Styles -->
     <link rel="stylesheet" href="./styles.css" />
 
@@ -124,12 +115,18 @@
               for="search-input"
               class="search-label flex items-center justify-center bg-light-gray"
             >
-              <i class="fa-solid fa-location-dot"></i>
+              <svg class="icon">
+                <use xlink:href="./images/icons/sprite.svg#location-dot"></use>
+              </svg>
             </label>
           </div>
           <button type="submit" class="search-button bg-blue color-white">
             <span class="bold text-14">Rechercher</span>
-            <i class="fa-solid fa-magnifying-glass"></i>
+            <svg class="icon icon-white">
+              <use
+                xlink:href="./images/icons/sprite.svg#magnifying-glass"
+              ></use>
+            </svg>
           </button>
         </form>
 
@@ -141,11 +138,15 @@
           <div class="tags flex">
             <!-- Tag -->
             <a href="#" class="tag flex items-center">
-              <span
+              <div
                 class="tag-icon-wrapper flex items-center justify-center bg-light-blue color-blue"
               >
-                <i class="fa-solid fa-money-bill-wave"></i>
-              </span>
+                <svg class="icon-18 icon-blue">
+                  <use
+                    xlink:href="./images/icons/sprite.svg#money-bill-wave"
+                  ></use>
+                </svg>
+              </div>
               <span class="tag-label bold text-14"> Économique </span>
             </a>
 
@@ -154,7 +155,11 @@
               <span
                 class="tag-icon-wrapper flex items-center justify-center bg-light-blue color-blue"
               >
-                <i class="fa-solid fa-child-reaching"></i>
+                <svg class="icon-18 icon-blue">
+                  <use
+                    xlink:href="./images/icons/sprite.svg#child-reaching"
+                  ></use>
+                </svg>
               </span>
               <span class="tag-label bold text-14"> Familial </span>
             </a>
@@ -164,7 +169,9 @@
               <span
                 class="tag-icon-wrapper flex items-center justify-center bg-light-blue color-blue"
               >
-                <i class="fa-solid fa-heart"></i>
+                <svg class="icon-18 icon-blue">
+                  <use xlink:href="./images/icons/sprite.svg#heart"></use>
+                </svg>
               </span>
               <span class="tag-label bold text-14"> Romantique </span>
             </a>
@@ -174,7 +181,9 @@
               <span
                 class="tag-icon-wrapper flex items-center justify-center bg-light-blue color-blue"
               >
-                <i class="fa-solid fa-dog"></i>
+                <svg class="icon-18 icon-blue">
+                  <use xlink:href="./images/icons/sprite.svg#dog"></use>
+                </svg>
               </span>
               <span class="tag-label bold text-14"> Animaux autorisés </span>
             </a>
@@ -183,7 +192,9 @@
 
         <!-- Results -->
         <div class="results flex items-center">
-          <i class="fa-solid fa-circle-info color-blue"></i>
+          <svg class="icon icon-blue">
+            <use xlink:href="./images/icons/sprite.svg#circle-info"></use>
+          </svg>
           <p class="text-14">
             Plus de 500 logements sont disponible dans cette ville
           </p>
@@ -213,18 +224,32 @@
                       Nuit à partir de <b class="bold">25€</b>
                     </p>
                   </div>
-                  <div class="city-card-note flex color-gray">
-                    <i class="fa-solid fa-star text-14" data-active="true"></i>
-                    <i class="fa-solid fa-star text-14" data-active="true"></i>
-                    <i class="fa-solid fa-star text-14" data-active="true"></i>
-                    <i class="fa-solid fa-star text-14" data-active="true"></i>
-                    <i class="fa-solid fa-star text-14" data-active="false"></i>
+                  <div class="city-card-note flex">
+                    <svg class="icon" data-active="true">
+                      <use xlink:href="./images/icons/sprite.svg#star"></use>
+                    </svg>
+                    <svg class="icon" data-active="true">
+                      <use xlink:href="./images/icons/sprite.svg#star"></use>
+                    </svg>
+                    <svg class="icon" data-active="true">
+                      <use xlink:href="./images/icons/sprite.svg#star"></use>
+                    </svg>
+                    <svg class="icon" data-active="true">
+                      <use xlink:href="./images/icons/sprite.svg#star"></use>
+                    </svg>
+                    <svg class="icon" data-active="false">
+                      <use xlink:href="./images/icons/sprite.svg#star"></use>
+                    </svg>
                   </div>
                 </div>
               </article>
               <!-- Corner hover -->
               <div class="city-card-corner">
-                <i class="fa-solid fa-arrow-right-long color-white"></i>
+                <svg class="icon icon-white">
+                  <use
+                    xlink:href="./images/icons/sprite.svg#arrow-right-long"
+                  ></use>
+                </svg>
               </div>
             </a>
 
@@ -243,18 +268,32 @@
                       Nuit à partir de <b class="bold">52€</b>
                     </p>
                   </div>
-                  <div class="city-card-note flex color-gray">
-                    <i class="fa-solid fa-star text-14" data-active="true"></i>
-                    <i class="fa-solid fa-star text-14" data-active="true"></i>
-                    <i class="fa-solid fa-star text-14" data-active="true"></i>
-                    <i class="fa-solid fa-star text-14" data-active="true"></i>
-                    <i class="fa-solid fa-star text-14" data-active="true"></i>
+                  <div class="city-card-note flex">
+                    <svg class="icon" data-active="true">
+                      <use xlink:href="./images/icons/sprite.svg#star"></use>
+                    </svg>
+                    <svg class="icon" data-active="true">
+                      <use xlink:href="./images/icons/sprite.svg#star"></use>
+                    </svg>
+                    <svg class="icon" data-active="true">
+                      <use xlink:href="./images/icons/sprite.svg#star"></use>
+                    </svg>
+                    <svg class="icon" data-active="true">
+                      <use xlink:href="./images/icons/sprite.svg#star"></use>
+                    </svg>
+                    <svg class="icon" data-active="true">
+                      <use xlink:href="./images/icons/sprite.svg#star"></use>
+                    </svg>
                   </div>
                 </div>
               </article>
               <!-- Corner hover -->
               <div class="city-card-corner">
-                <i class="fa-solid fa-arrow-right-long color-white"></i>
+                <svg class="icon icon-white">
+                  <use
+                    xlink:href="./images/icons/sprite.svg#arrow-right-long"
+                  ></use>
+                </svg>
               </div>
             </a>
 
@@ -273,18 +312,32 @@
                       Nuit à partir de <b class="bold">76€</b>
                     </p>
                   </div>
-                  <div class="city-card-note flex color-gray">
-                    <i class="fa-solid fa-star text-14" data-active="true"></i>
-                    <i class="fa-solid fa-star text-14" data-active="true"></i>
-                    <i class="fa-solid fa-star text-14" data-active="true"></i>
-                    <i class="fa-solid fa-star text-14" data-active="true"></i>
-                    <i class="fa-solid fa-star text-14" data-active="false"></i>
+                  <div class="city-card-note flex">
+                    <svg class="icon" data-active="true">
+                      <use xlink:href="./images/icons/sprite.svg#star"></use>
+                    </svg>
+                    <svg class="icon" data-active="true">
+                      <use xlink:href="./images/icons/sprite.svg#star"></use>
+                    </svg>
+                    <svg class="icon" data-active="true">
+                      <use xlink:href="./images/icons/sprite.svg#star"></use>
+                    </svg>
+                    <svg class="icon" data-active="true">
+                      <use xlink:href="./images/icons/sprite.svg#star"></use>
+                    </svg>
+                    <svg class="icon" data-active="false">
+                      <use xlink:href="./images/icons/sprite.svg#star"></use>
+                    </svg>
                   </div>
                 </div>
               </article>
               <!-- Corner hover -->
               <div class="city-card-corner">
-                <i class="fa-solid fa-arrow-right-long color-white"></i>
+                <svg class="icon icon-white">
+                  <use
+                    xlink:href="./images/icons/sprite.svg#arrow-right-long"
+                  ></use>
+                </svg>
               </div>
             </a>
 
@@ -303,18 +356,32 @@
                       Nuit à partir de <b class="bold">46€</b>
                     </p>
                   </div>
-                  <div class="city-card-note flex color-gray">
-                    <i class="fa-solid fa-star text-14" data-active="true"></i>
-                    <i class="fa-solid fa-star text-14" data-active="true"></i>
-                    <i class="fa-solid fa-star text-14" data-active="true"></i>
-                    <i class="fa-solid fa-star text-14" data-active="false"></i>
-                    <i class="fa-solid fa-star text-14" data-active="false"></i>
+                  <div class="city-card-note flex">
+                    <svg class="icon" data-active="true">
+                      <use xlink:href="./images/icons/sprite.svg#star"></use>
+                    </svg>
+                    <svg class="icon" data-active="true">
+                      <use xlink:href="./images/icons/sprite.svg#star"></use>
+                    </svg>
+                    <svg class="icon" data-active="true">
+                      <use xlink:href="./images/icons/sprite.svg#star"></use>
+                    </svg>
+                    <svg class="icon" data-active="false">
+                      <use xlink:href="./images/icons/sprite.svg#star"></use>
+                    </svg>
+                    <svg class="icon" data-active="false">
+                      <use xlink:href="./images/icons/sprite.svg#star"></use>
+                    </svg>
                   </div>
                 </div>
               </article>
               <!-- Corner hover -->
               <div class="city-card-corner">
-                <i class="fa-solid fa-arrow-right-long color-white"></i>
+                <svg class="icon icon-white">
+                  <use
+                    xlink:href="./images/icons/sprite.svg#arrow-right-long"
+                  ></use>
+                </svg>
               </div>
             </a>
 
@@ -333,18 +400,32 @@
                       Nuit à partir de <b class="bold">23€</b>
                     </p>
                   </div>
-                  <div class="city-card-note flex color-gray">
-                    <i class="fa-solid fa-star text-14" data-active="true"></i>
-                    <i class="fa-solid fa-star text-14" data-active="true"></i>
-                    <i class="fa-solid fa-star text-14" data-active="true"></i>
-                    <i class="fa-solid fa-star text-14" data-active="true"></i>
-                    <i class="fa-solid fa-star text-14" data-active="false"></i>
+                  <div class="city-card-note flex">
+                    <svg class="icon" data-active="true">
+                      <use xlink:href="./images/icons/sprite.svg#star"></use>
+                    </svg>
+                    <svg class="icon" data-active="true">
+                      <use xlink:href="./images/icons/sprite.svg#star"></use>
+                    </svg>
+                    <svg class="icon" data-active="true">
+                      <use xlink:href="./images/icons/sprite.svg#star"></use>
+                    </svg>
+                    <svg class="icon" data-active="true">
+                      <use xlink:href="./images/icons/sprite.svg#star"></use>
+                    </svg>
+                    <svg class="icon" data-active="false">
+                      <use xlink:href="./images/icons/sprite.svg#star"></use>
+                    </svg>
                   </div>
                 </div>
               </article>
               <!-- Corner hover -->
               <div class="city-card-corner">
-                <i class="fa-solid fa-arrow-right-long color-white"></i>
+                <svg class="icon icon-white">
+                  <use
+                    xlink:href="./images/icons/sprite.svg#arrow-right-long"
+                  ></use>
+                </svg>
               </div>
             </a>
 
@@ -363,34 +444,47 @@
                       Nuit à partir de <b class="bold">96€</b>
                     </p>
                   </div>
-                  <div class="city-card-note flex color-gray">
-                    <i class="fa-solid fa-star text-14" data-active="true"></i>
-                    <i class="fa-solid fa-star text-14" data-active="true"></i>
-                    <i class="fa-solid fa-star text-14" data-active="true"></i>
-                    <i class="fa-solid fa-star text-14" data-active="true"></i>
-                    <i class="fa-solid fa-star text-14" data-active="true"></i>
+                  <div class="city-card-note flex">
+                    <svg class="icon" data-active="true">
+                      <use xlink:href="./images/icons/sprite.svg#star"></use>
+                    </svg>
+                    <svg class="icon" data-active="true">
+                      <use xlink:href="./images/icons/sprite.svg#star"></use>
+                    </svg>
+                    <svg class="icon" data-active="true">
+                      <use xlink:href="./images/icons/sprite.svg#star"></use>
+                    </svg>
+                    <svg class="icon" data-active="true">
+                      <use xlink:href="./images/icons/sprite.svg#star"></use>
+                    </svg>
+                    <svg class="icon" data-active="true">
+                      <use xlink:href="./images/icons/sprite.svg#star"></use>
+                    </svg>
                   </div>
                 </div>
               </article>
               <!-- Corner hover -->
               <div class="city-card-corner">
-                <i class="fa-solid fa-arrow-right-long color-white"></i>
+                <svg class="icon icon-white">
+                  <use
+                    xlink:href="./images/icons/sprite.svg#arrow-right-long"
+                  ></use>
+                </svg>
               </div>
             </a>
           </div>
 
-          <a href="#" class="city-more flex items-center bold text-14">
-            Afficher plus
-          </a>
+          <a href="#" class="city-more bold text-14"> Afficher plus </a>
         </div>
 
         <!-- Popular -->
         <aside class="popular bg-light-gray flex flex-col">
-          <h2
-            class="popular-title bold text-18 flex items-center justify-between"
-          >
-            Les plus populaires
-          </h2>
+          <header class="flex items-center justify-between">
+            <h2 class="bold text-18">Les plus populaires</h2>
+            <svg class="icon-18">
+              <use xlink:href="./images/icons/sprite.svg#star"></use>
+            </svg>
+          </header>
           <div class="popular-grid grid">
             <!-- Card -->
             <a href="#" class="popular-card bg-white">
@@ -409,18 +503,32 @@
                       Nuit à partir de <b class="bold">128€</b>
                     </p>
                   </div>
-                  <div class="popular-card-note flex color-gray">
-                    <i class="fa-solid fa-star text-14" data-active="true"></i>
-                    <i class="fa-solid fa-star text-14" data-active="true"></i>
-                    <i class="fa-solid fa-star text-14" data-active="true"></i>
-                    <i class="fa-solid fa-star text-14" data-active="true"></i>
-                    <i class="fa-solid fa-star text-14" data-active="true"></i>
+                  <div class="popular-card-note flex">
+                    <svg class="icon" data-active="true">
+                      <use xlink:href="./images/icons/sprite.svg#star"></use>
+                    </svg>
+                    <svg class="icon" data-active="true">
+                      <use xlink:href="./images/icons/sprite.svg#star"></use>
+                    </svg>
+                    <svg class="icon" data-active="true">
+                      <use xlink:href="./images/icons/sprite.svg#star"></use>
+                    </svg>
+                    <svg class="icon" data-active="true">
+                      <use xlink:href="./images/icons/sprite.svg#star"></use>
+                    </svg>
+                    <svg class="icon" data-active="true">
+                      <use xlink:href="./images/icons/sprite.svg#star"></use>
+                    </svg>
                   </div>
                 </div>
               </article>
               <!-- Corner hover -->
               <div class="popular-card-corner">
-                <i class="fa-solid fa-arrow-right-long color-white"></i>
+                <svg class="icon icon-white">
+                  <use
+                    xlink:href="./images/icons/sprite.svg#arrow-right-long"
+                  ></use>
+                </svg>
               </div>
             </a>
 
@@ -441,18 +549,32 @@
                       Nuit à partir de <b class="bold">71€</b>
                     </p>
                   </div>
-                  <div class="popular-card-note flex color-gray">
-                    <i class="fa-solid fa-star text-14" data-active="true"></i>
-                    <i class="fa-solid fa-star text-14" data-active="true"></i>
-                    <i class="fa-solid fa-star text-14" data-active="true"></i>
-                    <i class="fa-solid fa-star text-14" data-active="true"></i>
-                    <i class="fa-solid fa-star text-14" data-active="false"></i>
+                  <div class="popular-card-note flex">
+                    <svg class="icon" data-active="true">
+                      <use xlink:href="./images/icons/sprite.svg#star"></use>
+                    </svg>
+                    <svg class="icon" data-active="true">
+                      <use xlink:href="./images/icons/sprite.svg#star"></use>
+                    </svg>
+                    <svg class="icon" data-active="true">
+                      <use xlink:href="./images/icons/sprite.svg#star"></use>
+                    </svg>
+                    <svg class="icon" data-active="true">
+                      <use xlink:href="./images/icons/sprite.svg#star"></use>
+                    </svg>
+                    <svg class="icon" data-active="false">
+                      <use xlink:href="./images/icons/sprite.svg#star"></use>
+                    </svg>
                   </div>
                 </div>
               </article>
               <!-- Corner hover -->
               <div class="popular-card-corner">
-                <i class="fa-solid fa-arrow-right-long color-white"></i>
+                <svg class="icon icon-white">
+                  <use
+                    xlink:href="./images/icons/sprite.svg#arrow-right-long"
+                  ></use>
+                </svg>
               </div>
             </a>
 
@@ -473,18 +595,32 @@
                       Nuit à partir de <b class="bold">68€</b>
                     </p>
                   </div>
-                  <div class="popular-card-note flex color-gray">
-                    <i class="fa-solid fa-star text-14" data-active="true"></i>
-                    <i class="fa-solid fa-star text-14" data-active="true"></i>
-                    <i class="fa-solid fa-star text-14" data-active="true"></i>
-                    <i class="fa-solid fa-star text-14" data-active="true"></i>
-                    <i class="fa-solid fa-star text-14" data-active="false"></i>
+                  <div class="popular-card-note flex">
+                    <svg class="icon" data-active="true">
+                      <use xlink:href="./images/icons/sprite.svg#star"></use>
+                    </svg>
+                    <svg class="icon" data-active="true">
+                      <use xlink:href="./images/icons/sprite.svg#star"></use>
+                    </svg>
+                    <svg class="icon" data-active="true">
+                      <use xlink:href="./images/icons/sprite.svg#star"></use>
+                    </svg>
+                    <svg class="icon" data-active="true">
+                      <use xlink:href="./images/icons/sprite.svg#star"></use>
+                    </svg>
+                    <svg class="icon" data-active="false">
+                      <use xlink:href="./images/icons/sprite.svg#star"></use>
+                    </svg>
                   </div>
                 </div>
               </article>
               <!-- Corner hover -->
               <div class="popular-card-corner">
-                <i class="fa-solid fa-arrow-right-long color-white"></i>
+                <svg class="icon icon-white">
+                  <use
+                    xlink:href="./images/icons/sprite.svg#arrow-right-long"
+                  ></use>
+                </svg>
               </div>
             </a>
           </div>
@@ -505,10 +641,13 @@
                 alt="Vieux Port"
                 class="activities-card-img"
               />
-              <figcaption
-                class="activities-card-title text-14 bold flex items-center"
-              >
-                Vieux Port
+              <figcaption class="activities-card-title flex items-center">
+                <h3 class="text-14 bold">Vieux Port</h3>
+                <svg class="icon">
+                  <use
+                    xlink:href="./images/icons/sprite.svg#arrow-right-long"
+                  ></use>
+                </svg>
               </figcaption>
             </figure>
           </a>
@@ -521,10 +660,13 @@
                 alt="Fort de Pomègues"
                 class="activities-card-img"
               />
-              <figcaption
-                class="activities-card-title text-14 bold flex items-center"
-              >
-                Fort de Pomègues
+              <figcaption class="activities-card-title flex items-center">
+                <h3 class="text-14 bold">Fort de Pomègues</h3>
+                <svg class="icon">
+                  <use
+                    xlink:href="./images/icons/sprite.svg#arrow-right-long"
+                  ></use>
+                </svg>
               </figcaption>
             </figure>
           </a>
@@ -538,9 +680,14 @@
                 class="activities-card-img"
               />
               <figcaption
-                class="activities-card-title flex items-center text-14 bold flex items-center"
+                class="activities-card-title flex items-center flex items-center"
               >
-                Îles du Frioul
+                <h3 class="text-14 bold">Îles du Frioul</h3>
+                <svg class="icon">
+                  <use
+                    xlink:href="./images/icons/sprite.svg#arrow-right-long"
+                  ></use>
+                </svg>
               </figcaption>
             </figure>
           </a>
@@ -553,10 +700,13 @@
                 alt="Parc National des Calanques"
                 class="activities-card-img"
               />
-              <figcaption
-                class="activities-card-title text-14 bold flex items-center"
-              >
-                Parc National des Calanques
+              <figcaption class="activities-card-title flex items-center">
+                <h3 class="text-14 bold">Parc National des Calanques</h3>
+                <svg class="icon">
+                  <use
+                    xlink:href="./images/icons/sprite.svg#arrow-right-long"
+                  ></use>
+                </svg>
               </figcaption>
             </figure>
           </a>
@@ -569,10 +719,13 @@
                 alt="Notre-Dame-de-la-Garde"
                 class="activities-card-img"
               />
-              <figcaption
-                class="activities-card-title text-14 bold flex items-center"
-              >
-                Notre-Dame-de-la-Garde
+              <figcaption class="activities-card-title flex items-center">
+                <h3 class="text-14 bold">Notre-Dame-de-la-Garde</h3>
+                <svg class="icon">
+                  <use
+                    xlink:href="./images/icons/sprite.svg#arrow-right-long"
+                  ></use>
+                </svg>
               </figcaption>
             </figure>
           </a>
@@ -585,10 +738,13 @@
                 alt="Parc Longchamp"
                 class="activities-card-img"
               />
-              <figcaption
-                class="activities-card-title text-14 bold flex items-center"
-              >
-                Parc Longchamp
+              <figcaption class="activities-card-title flex items-center">
+                <h3 class="text-14 bold">Parc Longchamp</h3>
+                <svg class="icon">
+                  <use
+                    xlink:href="./images/icons/sprite.svg#arrow-right-long"
+                  ></use>
+                </svg>
               </figcaption>
             </figure>
           </a>
