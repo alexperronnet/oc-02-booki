@@ -1,9 +1,5 @@
 .activities-card {
   position: relative;
-  border-radius: 16px;
-  overflow: hidden;
-  filter: drop-shadow(0 20px 13px rgb(0 0 0 / 0.03))
-    drop-shadow(0 8px 5px rgb(0 0 0 / 0.08));
   transition: all 200ms ease-out;
 }
 
@@ -16,10 +12,7 @@
 }
 
 .activities-card-img {
-  width: 100%;
   height: calc(100% - 50px);
-  object-fit: cover;
-  filter: saturate(1.5);
 }
 
 .activities-card-title {
