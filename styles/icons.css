@@ -1,0 +1,21 @@
+.icon {
+  min-width: 16px;
+  min-height: 16px;
+  max-width: 16px;
+  max-height: 16px;
+}
+
+.icon-18 {
+  min-width: 18px;
+  min-height: 18px;
+  max-width: 18px;
+  max-height: 18px;
+}
+
+.icon-white {
+  fill: var(--color-white);
+}
+
+.icon-blue {
+  fill: var(--color-blue);
+}

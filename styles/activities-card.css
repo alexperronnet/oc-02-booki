@@ -4,7 +4,7 @@
   overflow: hidden;
   filter: drop-shadow(0 20px 13px rgb(0 0 0 / 0.03))
     drop-shadow(0 8px 5px rgb(0 0 0 / 0.08));
-    transition: all 200ms ease-out;
+  transition: all 200ms ease-out;
 }
 
 .activities-card:hover {
@@ -28,19 +28,17 @@
   gap: 2px;
 }
 
-.activities-card-title::after {
-  content: "\f178";
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
+.activities-card-title .icon {
   opacity: 0;
   transition: all 200ms ease-out;
 }
 
 .activities-card:hover .activities-card-title {
+  fill: var(--color-blue);
   color: var(--color-blue);
 }
 
-.activities-card:hover .activities-card-title::after {
+.activities-card:hover .icon {
   opacity: 1;
   margin-left: 10px;
 }

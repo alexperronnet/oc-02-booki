@@ -6,7 +6,9 @@
     drop-shadow(0 8px 5px rgb(0 0 0 / 0.08));
 }
 
-.popular-card, .popular-content, .popular-card-img-wrapper {
+.popular-card,
+.popular-content,
+.popular-card-img-wrapper {
   height: 100%;
 }
 
@@ -36,8 +38,12 @@
   gap: 2px;
 }
 
-.popular-card-note i[data-active="true"] {
-  color: var(--color-blue);
+.popular-card-note .icon[data-active="true"] {
+  fill: var(--color-blue);
+}
+
+.popular-card-note .icon[data-active="false"] {
+  fill: var(--color-gray);
 }
 
 .popular-card-corner {
@@ -47,15 +53,15 @@
   width: 50px;
   height: 100%;
   background-color: var(--color-blue);
-  opacity: .9;
+  opacity: 0.9;
   transition: all 200ms ease-out;
 }
 
-.popular-card-corner i {
+.popular-card-corner .icon {
   position: absolute;
   transform: skewX(-10deg);
   top: 10px;
-  left: 15px;
+  left: 10px;
 }
 
 .popular-card:hover .popular-card-corner {

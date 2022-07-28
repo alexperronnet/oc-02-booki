@@ -32,6 +32,7 @@
 
 #search-input:focus + .search-label {
   color: var(--color-white);
+  fill: var(--color-white);
   background-color: var(--color-blue);
 }
 
@@ -53,7 +54,7 @@
   opacity: 0.8;
 }
 
-.search-button i {
+.search-button .icon {
   display: none;
 }
 
@@ -77,7 +78,7 @@
     display: none;
   }
 
-  .search-button i {
+  .search-button .icon {
     display: block;
   }
 }
