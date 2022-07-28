@@ -5,6 +5,7 @@
   font-weight: 400;
   src: local(""), url("../../fonts/woff2/raleway-400.woff2") format("woff2"),
     url("../../fonts/woff/raleway-400.woff") format("woff");
+  font-display: swap;
 }
 
 /* Raleway 700 */
@@ -14,4 +15,5 @@
   font-weight: 700;
   src: local(""), url("../../fonts/woff2/raleway-700.woff2") format("woff2"),
     url("../../fonts/woff/raleway-700.woff") format("woff");
+  font-display: swap;
 }
