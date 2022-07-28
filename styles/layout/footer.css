@@ -1,0 +1,20 @@
+#footer .container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.footer-nav {
+  flex-basis: 33.333333%;
+  gap: 24px;
+}
+
+.footer-links {
+  gap: 16px;
+}
+
+@media screen and (max-width: 896px) {
+  #footer .container {
+    flex-direction: column;
+    gap: 32px;
+  }
+}

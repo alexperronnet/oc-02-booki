@@ -1,29 +1,21 @@
- #footer .container {
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
+/*
+====================
+Links
+====================
+*/
 
-.footer-nav {
-  flex-basis: 33.333333%;
-  gap: 24px;
-}
-
-.footer-links {
-  gap: 16px;
-}
-
-.footer-link {
+.link-underline {
   display: inline-block;
   width: max-content;
   position: relative;
   transition: all 200ms ease-out;
 }
 
-.footer-link:hover {
+.link-underline:hover {
   color: var(--color-blue);
 }
 
-.footer-link:after {
+.link-underline:after {
   content: "";
   position: absolute;
   width: 100%;
@@ -37,14 +29,26 @@
   transition: transform 0.25s ease-out;
 }
 
-.footer-link:hover:after {
+.link-underline:hover:after {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
 
-@media screen and (max-width: 896px) {
-  #footer .container {
-    flex-direction: column;
-    gap: 32px;
-  }
+/*
+====================
+Card
+====================
+*/
+
+.card-basic {
+  overflow: hidden;
+  border-radius: 16px;
+  filter: drop-shadow(0 20px 13px rgb(0 0 0 / 0.03))
+    drop-shadow(0 8px 5px rgb(0 0 0 / 0.08));
+}
+
+.card-basic img {
+  width: 100%;
+  object-fit: cover;
+  filter: saturate(1.5);
 }
