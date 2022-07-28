@@ -3,8 +3,8 @@
   font-family: "Raleway";
   font-style: normal;
   font-weight: 400;
-  src: local(""), url("../fonts/woff2/raleway-400.woff2") format("woff2"),
-    url("../fonts/woff/raleway-400.woff") format("woff");
+  src: local(""), url("../../fonts/woff2/raleway-400.woff2") format("woff2"),
+    url("../../fonts/woff/raleway-400.woff") format("woff");
 }
 
 /* Raleway 700 */
@@ -12,6 +12,6 @@
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
-  src: local(""), url("../fonts/woff2/raleway-700.woff2") format("woff2"),
-    url("../fonts/woff/raleway-700.woff") format("woff");
+  src: local(""), url("../../fonts/woff2/raleway-700.woff2") format("woff2"),
+    url("../../fonts/woff/raleway-700.woff") format("woff");
 }
