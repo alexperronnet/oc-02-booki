@@ -1,4 +1,6 @@
 /* Imports */
+@import url("./styles/variables.css");
+@import url("./styles/fonts.css");
 @import url("./styles/reset.css");
 @import url("./styles/global.css");
 @import url("./styles/utilities.css");
@@ -15,14 +17,3 @@
 @import url("./styles/activities-card.css");
 @import url("./styles/activities.css");
 @import url("./styles/footer.css");
-
-/* Variables */
-:root {
-  /* Colors */
-  --color-white: #ffffff;
-  --color-light-gray: #f2f2f2;
-  --color-gray: #d9d9d9;
-  --color-black: #000000;
-  --color-light-blue: #deebff;
-  --color-blue: #0065fc;
-}
