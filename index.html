@@ -7,7 +7,6 @@
 
     <!-- Device -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="format-detection" content="telephone=no" />
 
     <!-- Canonical -->
     <link rel="canonical" href="https://ap-oc-p2-booki.netlify.app/" />
@@ -71,19 +70,39 @@
     <title>Booki - Trouvez votre hébergement pour des vacances de rêve</title>
   </head>
   <body>
+    <!-- banner -->
+    <div class="banner-top" role="banner">
+      <p class="container">
+        An
+        <a
+          href="https://openclassrooms.com/fr/"
+          target="_blank"
+          class="banner-top-link link-underline"
+          >OpenClassrooms</a
+        >
+        project by
+        <a
+          href="https://github.com/alexperronnet"
+          target="_blank"
+          class="banner-top-link link-underline"
+          >alexperronnet</a
+        >
+      </p>
+    </div>
+
     <!-- Header start -->
-    <header id="header">
-      <div class="container flex items-center justify-between">
+    <header id="header" class="header">
+      <div class="header__content container">
         <img
           src="./images/logos/booki-logo.svg"
           alt="Booki logo"
-          class="header-logo"
+          class="header__logo"
         />
-        <nav class="header-nav flex text-14">
-          <a href="#lodgings" class="nav-link" data-active="true">
+        <nav class="header__nav">
+          <a href="#lodgings" class="header__nav-link" data-active="true">
             Hébergements
           </a>
-          <a href="#activities" class="nav-link" data-active="false">
+          <a href="#activities" class="header__nav-link" data-active="false">
             Activités
           </a>
         </nav>
@@ -93,35 +112,33 @@
     <!-- Main -->
     <main id="main">
       <!-- Hero -->
-      <section id="hero" class="container flex flex-col">
+      <section id="hero" class="hero container">
         <!-- Hero header -->
-        <header class="hero-header flex flex-col">
-          <h1 class="text-20 bold">
+        <header class="hero__header">
+          <h1 class="hero__header-title">
             Trouvez votre hébergement pour des vacances de rêve
           </h1>
-          <p class="">En plein centre ville ou pleine nature</p>
+          <p>En plein centre ville ou pleine nature</p>
         </header>
 
         <!-- Search form -->
-        <form action="#" method="#" class="search flex">
-          <div class="search-label-input flex">
+        <form action="#" method="#" class="search">
+          <div class="search__label-input">
             <input
               type="search"
-              placeholder="Marseille, France"
+              placeholder="Entrez une ville"
+              value="Marseille, France"
               id="search-input"
-              class="bold color-blue"
+              class="search__input"
             />
-            <label
-              for="search-input"
-              class="search-label flex items-center justify-center bg-light-gray"
-            >
+            <label for="search-input" class="search__label">
               <svg class="icon">
                 <use xlink:href="./images/icons/sprite.svg#location-dot"></use>
               </svg>
             </label>
           </div>
-          <button type="submit" class="search-button bg-blue color-white">
-            <span class="bold text-14">Rechercher</span>
+          <button type="submit" class="search__button">
+            <span class="search__button-text">Rechercher</span>
             <svg class="icon icon-white">
               <use
                 xlink:href="./images/icons/sprite.svg#magnifying-glass"
@@ -131,103 +148,94 @@
         </form>
 
         <!-- Filters -->
-        <div class="filters flex items-center">
-          <h6 class="bold text-14">Filtres</h6>
+        <div class="filters">
+          <h6 class="filters__title">Filtres</h6>
 
           <!-- Tags -->
-          <div class="tags flex">
+          <div class="filters__tags">
             <!-- Tag -->
-            <a href="#" class="tag flex items-center">
-              <div
-                class="tag-icon-wrapper flex items-center justify-center bg-light-blue color-blue"
-              >
+            <a href="#" class="filters__tag">
+              <div class="filters__tag-icon-wrapper">
                 <svg class="icon-18 icon-blue">
                   <use
                     xlink:href="./images/icons/sprite.svg#money-bill-wave"
                   ></use>
                 </svg>
               </div>
-              <span class="tag-label bold text-14"> Économique </span>
+              <span class="filters__tag-label"> Économique </span>
             </a>
 
             <!-- Tag -->
-            <a href="#" class="tag flex items-center">
-              <span
-                class="tag-icon-wrapper flex items-center justify-center bg-light-blue color-blue"
-              >
+            <a href="#" class="filters__tag">
+              <div class="filters__tag-icon-wrapper">
                 <svg class="icon-18 icon-blue">
                   <use
                     xlink:href="./images/icons/sprite.svg#child-reaching"
                   ></use>
                 </svg>
-              </span>
-              <span class="tag-label bold text-14"> Familial </span>
+              </div>
+              <span class="filters__tag-label">Familial</span>
             </a>
 
             <!-- Tag -->
-            <a href="#" class="tag flex items-center">
-              <span
-                class="tag-icon-wrapper flex items-center justify-center bg-light-blue color-blue"
-              >
+            <a href="#" class="filters__tag">
+              <div class="filters__tag-icon-wrapper">
                 <svg class="icon-18 icon-blue">
                   <use xlink:href="./images/icons/sprite.svg#heart"></use>
                 </svg>
-              </span>
-              <span class="tag-label bold text-14"> Romantique </span>
+              </div>
+              <span class="filters__tag-label">Romantique</span>
             </a>
 
             <!-- Tag -->
-            <a href="#" class="tag flex items-center">
-              <span
-                class="tag-icon-wrapper flex items-center justify-center bg-light-blue color-blue"
-              >
+            <a href="#" class="filters__tag">
+              <div class="filters__tag-icon-wrapper">
                 <svg class="icon-18 icon-blue">
                   <use xlink:href="./images/icons/sprite.svg#dog"></use>
                 </svg>
-              </span>
-              <span class="tag-label bold text-14"> Animaux autorisés </span>
+              </div>
+              <span class="filters__tag-label">Animaux autorisés</span>
             </a>
           </div>
         </div>
 
         <!-- Results -->
-        <div class="results flex items-center">
+        <div class="results">
           <svg class="icon icon-blue">
             <use xlink:href="./images/icons/sprite.svg#circle-info"></use>
           </svg>
-          <p class="text-14">
+          <p class="results__text">
             Plus de 500 logements sont disponible dans cette ville
           </p>
         </div>
       </section>
 
       <!-- Lodgings -->
-      <section id="lodgings" class="flex">
+      <section id="lodgings" class="lodgings">
         <!-- City -->
-        <div class="city bg-light-gray flex flex-col">
-          <h2 class="city-title bold text-18">Hébergements à Marseille</h2>
+        <div class="lodgings__city">
+          <h2 class="lodgings__city-title">Hébergements à Marseille</h2>
 
           <!-- Grid -->
-          <div class="city-grid grid">
+          <div class="lodgings__city-grid">
             <!-- Card -->
-            <a
-              href="#"
-              class="card-basic lodging-card lodging-card-city bg-white"
-            >
-              <article class="lodging-card-content flex flex-col">
+            <a href="#" class="lodging__card lodging__card-city card-basic">
+              <article class="lodging__card-content">
                 <img
                   src="./images/lodgings/auberge-la-cannebiere.webp"
                   alt="Auberge La Cannebière"
-                  class="lodging-card-img"
+                  class="lodging__card-img"
                 />
-                <div class="lodging-card-info flex flex-col">
-                  <div class="lodging-card-text flex flex-col">
-                    <h3 class="bold">Auberge La Cannebière</h3>
-                    <p class="text-14">
-                      Nuit à partir de <b class="bold">25€</b>
+                <div class="lodging__card-info">
+                  <div class="lodging__card-text">
+                    <h3 class="lodging__card-text-title">
+                      Auberge La Cannebière
+                    </h3>
+                    <p class="lodging__card-text-price">
+                      Nuit à partir de <span>25€</span>
                     </p>
                   </div>
-                  <div class="lodging-card-note flex">
+                  <div class="lodging__card-note">
                     <svg class="icon" data-active="true">
                       <use xlink:href="./images/icons/sprite.svg#star"></use>
                     </svg>
@@ -247,7 +255,7 @@
                 </div>
               </article>
               <!-- Corner hover -->
-              <div class="lodging-card-corner">
+              <div class="lodging__card-corner">
                 <svg class="icon icon-white">
                   <use
                     xlink:href="./images/icons/sprite.svg#arrow-right-long"
@@ -257,24 +265,21 @@
             </a>
 
             <!-- Card -->
-            <a
-              href="#"
-              class="card-basic lodging-card lodging-card-city bg-white"
-            >
-              <article class="lodging-card-content flex flex-col">
+            <a href="#" class="lodging__card lodging__card-city card-basic">
+              <article class="lodging__card-content">
                 <img
                   src="./images/lodgings/hotel-du-port.webp"
                   alt="Hôtel du port"
-                  class="lodging-card-img"
+                  class="lodging__card-img"
                 />
-                <div class="lodging-card-info flex flex-col">
-                  <div class="lodging-card-text flex flex-col">
-                    <h3 class="bold">Hôtel du port</h3>
-                    <p class="text-14">
-                      Nuit à partir de <b class="bold">52€</b>
+                <div class="lodging__card-info">
+                  <div class="lodging__card-text">
+                    <h3 class="lodging__card-text-title">Hôtel du port</h3>
+                    <p class="lodging__card-text-price">
+                      Nuit à partir de <span>52€</span>
                     </p>
                   </div>
-                  <div class="lodging-card-note flex">
+                  <div class="lodging__card-note">
                     <svg class="icon" data-active="true">
                       <use xlink:href="./images/icons/sprite.svg#star"></use>
                     </svg>
@@ -294,7 +299,7 @@
                 </div>
               </article>
               <!-- Corner hover -->
-              <div class="lodging-card-corner">
+              <div class="lodging__card-corner">
                 <svg class="icon icon-white">
                   <use
                     xlink:href="./images/icons/sprite.svg#arrow-right-long"
@@ -304,24 +309,21 @@
             </a>
 
             <!-- Card -->
-            <a
-              href="#"
-              class="card-basic lodging-card lodging-card-city bg-white"
-            >
-              <article class="lodging-card-content flex flex-col">
+            <a href="#" class="lodging__card lodging__card-city card-basic">
+              <article class="lodging__card-content">
                 <img
                   src="./images/lodgings/hotel-les-mouettes.webp"
                   alt="Hôtel Les mouettes"
-                  class="lodging-card-img"
+                  class="lodging__card-img"
                 />
-                <div class="lodging-card-info flex flex-col">
-                  <div class="lodging-card-text flex flex-col">
-                    <h3 class="bold">Hôtel Les mouettes</h3>
-                    <p class="text-14">
-                      Nuit à partir de <b class="bold">76€</b>
+                <div class="lodging__card-info">
+                  <div class="lodging__card-text">
+                    <h3 class="lodging__card-text-title">Hôtel Les mouettes</h3>
+                    <p class="lodging__card-text-price">
+                      Nuit à partir de <span>76€</span>
                     </p>
                   </div>
-                  <div class="lodging-card-note flex">
+                  <div class="lodging__card-note">
                     <svg class="icon" data-active="true">
                       <use xlink:href="./images/icons/sprite.svg#star"></use>
                     </svg>
@@ -341,7 +343,7 @@
                 </div>
               </article>
               <!-- Corner hover -->
-              <div class="lodging-card-corner">
+              <div class="lodging__card-corner">
                 <svg class="icon icon-white">
                   <use
                     xlink:href="./images/icons/sprite.svg#arrow-right-long"
@@ -351,24 +353,21 @@
             </a>
 
             <!-- Card -->
-            <a
-              href="#"
-              class="card-basic lodging-card lodging-card-city bg-white"
-            >
-              <article class="lodging-card-content flex flex-col">
+            <a href="#" class="lodging__card lodging__card-city card-basic">
+              <article class="lodging__card-content">
                 <img
                   src="./images/lodgings/hotel-de-la-mer.webp"
                   alt="Hôtel de la mer"
-                  class="lodging-card-img"
+                  class="lodging__card-img"
                 />
-                <div class="lodging-card-info flex flex-col">
-                  <div class="lodging-card-text flex flex-col">
-                    <h3 class="bold">Hôtel de la mer</h3>
-                    <p class="text-14">
-                      Nuit à partir de <b class="bold">46€</b>
+                <div class="lodging__card-info">
+                  <div class="lodging__card-text">
+                    <h3 class="lodging__card-text-title">Hôtel de la mer</h3>
+                    <p class="lodging__card-text-price">
+                      Nuit à partir de <span>46€</span>
                     </p>
                   </div>
-                  <div class="lodging-card-note flex">
+                  <div class="lodging__card-note">
                     <svg class="icon" data-active="true">
                       <use xlink:href="./images/icons/sprite.svg#star"></use>
                     </svg>
@@ -388,7 +387,7 @@
                 </div>
               </article>
               <!-- Corner hover -->
-              <div class="lodging-card-corner">
+              <div class="lodging__card-corner">
                 <svg class="icon icon-white">
                   <use
                     xlink:href="./images/icons/sprite.svg#arrow-right-long"
@@ -398,24 +397,21 @@
             </a>
 
             <!-- Card -->
-            <a
-              href="#"
-              class="card-basic lodging-card lodging-card-city bg-white"
-            >
-              <article class="lodging-card-content flex flex-col">
+            <a href="#" class="lodging__card lodging__card-city card-basic">
+              <article class="lodging__card-content">
                 <img
                   src="./images/lodgings/auberge-le-panier.webp"
                   alt="Auberge Le Panier"
-                  class="lodging-card-img"
+                  class="lodging__card-img"
                 />
-                <div class="lodging-card-info flex flex-col">
-                  <div class="lodging-card-text flex flex-col">
-                    <h3 class="bold">Auberge Le Panier</h3>
-                    <p class="text-14">
-                      Nuit à partir de <b class="bold">23€</b>
+                <div class="lodging__card-info">
+                  <div class="lodging__card-text">
+                    <h3 class="lodging__card-text-title">Auberge Le Panier</h3>
+                    <p class="lodging__card-text-price">
+                      Nuit à partir de <span>23€</span>
                     </p>
                   </div>
-                  <div class="lodging-card-note flex">
+                  <div class="lodging__card-note">
                     <svg class="icon" data-active="true">
                       <use xlink:href="./images/icons/sprite.svg#star"></use>
                     </svg>
@@ -435,7 +431,7 @@
                 </div>
               </article>
               <!-- Corner hover -->
-              <div class="lodging-card-corner">
+              <div class="lodging__card-corner">
                 <svg class="icon icon-white">
                   <use
                     xlink:href="./images/icons/sprite.svg#arrow-right-long"
@@ -445,24 +441,21 @@
             </a>
 
             <!-- Card -->
-            <a
-              href="#"
-              class="card-basic lodging-card lodging-card-city bg-white"
-            >
-              <article class="lodging-card-content flex flex-col">
+            <a href="#" class="lodging__card lodging__card-city card-basic">
+              <article class="lodging__card-content">
                 <img
                   src="./images/lodgings/hotel-chez-amina.webp"
                   alt="Hôtel chez Amina"
-                  class="lodging-card-img"
+                  class="lodging__card-img"
                 />
-                <div class="lodging-card-info flex flex-col">
-                  <div class="lodging-card-text flex flex-col">
-                    <h3 class="bold">Hôtel chez Amina</h3>
-                    <p class="text-14">
-                      Nuit à partir de <b class="bold">96€</b>
+                <div class="lodging__card-info">
+                  <div class="lodging__card-text">
+                    <h3 class="lodging__card-text-title">Hôtel chez Amina</h3>
+                    <p class="lodging__card-text-price">
+                      Nuit à partir de <span>96€</span>
                     </p>
                   </div>
-                  <div class="lodging-card-note flex">
+                  <div class="lodging__card-note">
                     <svg class="icon" data-active="true">
                       <use xlink:href="./images/icons/sprite.svg#star"></use>
                     </svg>
@@ -482,7 +475,7 @@
                 </div>
               </article>
               <!-- Corner hover -->
-              <div class="lodging-card-corner">
+              <div class="lodging__card-corner">
                 <svg class="icon icon-white">
                   <use
                     xlink:href="./images/icons/sprite.svg#arrow-right-long"
@@ -492,42 +485,41 @@
             </a>
           </div>
 
-          <a href="#" class="link-underline bold text-14">Afficher plus</a>
+          <a href="#" class="link-underline">Afficher plus</a>
         </div>
 
         <!-- Popular -->
-        <aside class="popular bg-light-gray flex flex-col">
+        <aside class="lodgings__popular">
           <!-- Header popular -->
-          <header class="flex items-center justify-between">
-            <h2 class="bold text-18">Les plus populaires</h2>
+          <header class="lodgings__popular-header">
+            <h2 class="lodgings__popular-header-title">Les plus populaires</h2>
             <svg class="icon-18">
               <use xlink:href="./images/icons/sprite.svg#star"></use>
             </svg>
           </header>
 
           <!-- Grid -->
-          <div class="popular-grid grid">
+          <div class="lodgings__popular-grid">
             <!-- Card -->
-            <a
-              href="#"
-              class="card-basic lodging-card lodging-card-popular bg-white"
-            >
-              <article class="lodging-card-content flex">
-                <div class="lodging-card-img-wrapper">
+            <a href="#" class="lodging__card lodging__card-popular card-basic">
+              <article class="lodging__card-content">
+                <div class="lodging__card-img-wrapper">
                   <img
                     src="./images/lodgings/hotel-le-soleil-du-matin.webp"
                     alt="Hôtel Le soleil du matin"
-                    class="lodging-card-img"
+                    class="lodging__card-img"
                   />
                 </div>
-                <div class="lodging-card-info flex flex-col justify-between">
-                  <div class="lodging-card-text flex flex-col">
-                    <h3 class="bold">Hôtel Le soleil du matin</h3>
-                    <p class="text-14">
-                      Nuit à partir de <b class="bold">128€</b>
+                <div class="lodging__card-info">
+                  <div class="lodging__card-text">
+                    <h3 class="lodging__card-text-title">
+                      Hôtel Le soleil du matin
+                    </h3>
+                    <p class="lodging__card-text-price">
+                      Nuit à partir de <span>128€</span>
                     </p>
                   </div>
-                  <div class="lodging-card-note flex">
+                  <div class="lodging__card-note">
                     <svg class="icon" data-active="true">
                       <use xlink:href="./images/icons/sprite.svg#star"></use>
                     </svg>
@@ -547,7 +539,7 @@
                 </div>
               </article>
               <!-- Corner hover -->
-              <div class="lodging-card-corner">
+              <div class="lodging__card-corner">
                 <svg class="icon icon-white">
                   <use
                     xlink:href="./images/icons/sprite.svg#arrow-right-long"
@@ -557,26 +549,25 @@
             </a>
 
             <!-- Card -->
-            <a
-              href="#"
-              class="card-basic lodging-card lodging-card-popular bg-white"
-            >
-              <article class="lodging-card-content flex">
-                <div class="lodging-card-img-wrapper">
+            <a href="#" class="lodging__card lodging__card-popular card-basic">
+              <article class="lodging__card-content">
+                <div class="lodging__card-img-wrapper">
                   <img
                     src="./images/lodgings/au-coeur-de-l-eau.webp"
                     alt="Au cœur de l'eau Chambres d'hôtes"
-                    class="lodging-card-img"
+                    class="lodging__card-img"
                   />
                 </div>
-                <div class="lodging-card-info flex flex-col justify-between">
-                  <div class="lodging-card-text flex flex-col">
-                    <h3 class="bold">Au cœur de l'eau Chambres d'hôtes</h3>
-                    <p class="text-14">
-                      Nuit à partir de <b class="bold">71€</b>
+                <div class="lodging__card-info">
+                  <div class="lodging__card-text">
+                    <h3 class="lodging__card-text-title">
+                      Au cœur de l'eau Chambres d'hôtes
+                    </h3>
+                    <p class="lodging__card-text-price">
+                      Nuit à partir de <span>71€</span>
                     </p>
                   </div>
-                  <div class="lodging-card-note flex">
+                  <div class="lodging__card-note">
                     <svg class="icon" data-active="true">
                       <use xlink:href="./images/icons/sprite.svg#star"></use>
                     </svg>
@@ -596,7 +587,7 @@
                 </div>
               </article>
               <!-- Corner hover -->
-              <div class="lodging-card-corner">
+              <div class="lodging__card-corner">
                 <svg class="icon icon-white">
                   <use
                     xlink:href="./images/icons/sprite.svg#arrow-right-long"
@@ -606,26 +597,25 @@
             </a>
 
             <!-- Card -->
-            <a
-              href="#"
-              class="card-basic lodging-card lodging-card-popular bg-white"
-            >
-              <article class="lodging-card-content flex">
-                <div class="lodging-card-img-wrapper">
+            <a href="#" class="lodging__card lodging__card-popular card-basic">
+              <article class="lodging__card-content">
+                <div class="lodging__card-img-wrapper">
                   <img
                     src="./images/lodgings/hotel-tout-bleu-et-blanc.webp"
                     alt="Hôtel Tout Bleu et Blanc"
-                    class="lodging-card-img"
+                    class="lodging__card-img"
                   />
                 </div>
-                <div class="lodging-card-info flex flex-col justify-between">
-                  <div class="lodging-card-text flex flex-col">
-                    <h3 class="bold">Hôtel Tout Bleu et Blanc</h3>
-                    <p class="text-14">
-                      Nuit à partir de <b class="bold">128€</b>
+                <div class="lodging__card-info">
+                  <div class="lodging__card-text">
+                    <h3 class="lodging__card-text-title">
+                      Hôtel Tout Bleu et Blanc
+                    </h3>
+                    <p class="lodging__card-text-price">
+                      Nuit à partir de <span>68€</span>
                     </p>
                   </div>
-                  <div class="lodging-card-note flex">
+                  <div class="lodging__card-note">
                     <svg class="icon" data-active="true">
                       <use xlink:href="./images/icons/sprite.svg#star"></use>
                     </svg>
@@ -645,7 +635,7 @@
                 </div>
               </article>
               <!-- Corner hover -->
-              <div class="lodging-card-corner">
+              <div class="lodging__card-corner">
                 <svg class="icon icon-white">
                   <use
                     xlink:href="./images/icons/sprite.svg#arrow-right-long"
@@ -658,21 +648,21 @@
       </section>
 
       <!-- Activities -->
-      <section id="activities" class="container flex flex-col">
-        <h2 class="bold text-18">Activités à Marseille</h2>
+      <section id="activities" class="activities container">
+        <h2 class="activities__title">Activités à Marseille</h2>
 
         <!-- Grid -->
-        <div class="activities-grid grid">
+        <div class="activities__grid">
           <!-- Card -->
-          <a href="#" class="card-basic activities-card bg-white">
-            <figure class="flex flex-col">
+          <a href="#" class="activities__card card-basic">
+            <figure class="activities__card-figure">
               <img
                 src="./images/activities/vieux-port.webp"
                 alt="Vieux Port"
-                class="activities-card-img"
+                class="activities__card-img"
               />
-              <figcaption class="activities-card-title flex items-center">
-                <h3 class="text-14 bold">Vieux Port</h3>
+              <figcaption class="activities__card-title">
+                <h3 class="activities__card-title-text">Vieux Port</h3>
                 <svg class="icon">
                   <use
                     xlink:href="./images/icons/sprite.svg#arrow-right-long"
@@ -683,15 +673,15 @@
           </a>
 
           <!-- Card -->
-          <a href="#" class="card-basic activities-card bg-white">
-            <figure class="flex flex-col">
+          <a href="#" class="activities__card card-basic">
+            <figure class="activities__card-figure">
               <img
                 src="./images/activities/fort-de-pomegues.webp"
-                alt="Fort de Pomègues"
-                class="activities-card-img"
+                alt="Fort de Pomègue"
+                class="activities__card-img"
               />
-              <figcaption class="activities-card-title flex items-center">
-                <h3 class="text-14 bold">Fort de Pomègues</h3>
+              <figcaption class="activities__card-title">
+                <h3 class="activities__card-title-text">Fort de Pomègue</h3>
                 <svg class="icon">
                   <use
                     xlink:href="./images/icons/sprite.svg#arrow-right-long"
@@ -702,17 +692,15 @@
           </a>
 
           <!-- Card -->
-          <a href="#" class="card-basic activities-card bg-white">
-            <figure class="flex flex-col">
+          <a href="#" class="activities__card card-basic">
+            <figure class="activities__card-figure">
               <img
                 src="./images/activities/iles-du-frioul.webp"
-                alt="Îles du Frioul"
-                class="activities-card-img"
+                alt="Île du Frioul"
+                class="activities__card-img"
               />
-              <figcaption
-                class="activities-card-title flex items-center flex items-center"
-              >
-                <h3 class="text-14 bold">Îles du Frioul</h3>
+              <figcaption class="activities__card-title">
+                <h3 class="activities__card-title-text">Île du Frioul</h3>
                 <svg class="icon">
                   <use
                     xlink:href="./images/icons/sprite.svg#arrow-right-long"
@@ -723,15 +711,17 @@
           </a>
 
           <!-- Card -->
-          <a href="#" class="card-basic activities-card bg-white">
-            <figure class="flex flex-col">
+          <a href="#" class="activities__card card-basic">
+            <figure class="activities__card-figure">
               <img
                 src="./images/activities/parc-national-des-calanques.webp"
                 alt="Parc National des Calanques"
-                class="activities-card-img"
+                class="activities__card-img"
               />
-              <figcaption class="activities-card-title flex items-center">
-                <h3 class="text-14 bold">Parc National des Calanques</h3>
+              <figcaption class="activities__card-title">
+                <h3 class="activities__card-title-text">
+                  Parc National des Calanques
+                </h3>
                 <svg class="icon">
                   <use
                     xlink:href="./images/icons/sprite.svg#arrow-right-long"
@@ -742,15 +732,17 @@
           </a>
 
           <!-- Card -->
-          <a href="#" class="card-basic activities-card bg-white">
-            <figure class="flex flex-col">
+          <a href="#" class="activities__card card-basic">
+            <figure class="activities__card-figure">
               <img
                 src="./images/activities/notre-dame-de-la-garde.webp"
                 alt="Notre-Dame-de-la-Garde"
-                class="activities-card-img"
+                class="activities__card-img"
               />
-              <figcaption class="activities-card-title flex items-center">
-                <h3 class="text-14 bold">Notre-Dame-de-la-Garde</h3>
+              <figcaption class="activities__card-title">
+                <h3 class="activities__card-title-text">
+                  Notre-Dame-de-la-Garde
+                </h3>
                 <svg class="icon">
                   <use
                     xlink:href="./images/icons/sprite.svg#arrow-right-long"
@@ -761,15 +753,15 @@
           </a>
 
           <!-- Card -->
-          <a href="#" class="card-basic activities-card bg-white">
-            <figure class="flex flex-col">
+          <a href="#" class="activities__card card-basic">
+            <figure class="activities__card-figure">
               <img
                 src="./images/activities/parc-longchamp.webp"
                 alt="Parc Longchamp"
-                class="activities-card-img"
+                class="activities__card-img"
               />
-              <figcaption class="activities-card-title flex items-center">
-                <h3 class="text-14 bold">Parc Longchamp</h3>
+              <figcaption class="activities__card-title">
+                <h3 class="activities__card-title-text">Parc Longchamp</h3>
                 <svg class="icon">
                   <use
                     xlink:href="./images/icons/sprite.svg#arrow-right-long"
@@ -783,13 +775,13 @@
     </main>
 
     <!-- Footer -->
-    <footer id="footer" class="bg-light-gray">
-      <div class="container flex">
+    <footer id="footer" class="footer">
+      <div class="footer__content container">
         <!-- Col -->
-        <nav class="footer-nav flex flex-col">
-          <h4 class="bold">À propos</h4>
+        <nav class="footer__nav">
+          <h4 class="footer__nav-title">À propos</h4>
           <!-- Links -->
-          <div class="footer-links flex flex-col">
+          <div class="footer__nav-links">
             <a href="#" class="link-underline">Fonctionnement du site</a>
             <a href="#" class="link-underline">Conditions générals de vente</a>
             <a href="#" class="link-underline">Données et confidentialité</a>
@@ -797,20 +789,20 @@
         </nav>
 
         <!-- Col -->
-        <nav class="footer-nav flex flex-col">
-          <h4 class="bold">Nos hébergements</h4>
+        <nav class="footer__nav">
+          <h4 class="footer__nav-title">Nos hébergements</h4>
           <!-- Links -->
-          <div class="footer-links flex flex-col">
+          <div class="footer__nav-links">
             <a href="#" class="link-underline">Charte qualité</a>
             <a href="#" class="link-underline">Soumettre un hôtel</a>
           </div>
         </nav>
 
         <!-- Col -->
-        <nav class="footer-nav flex flex-col">
-          <h4 class="bold">Assistance</h4>
+        <nav class="footer__nav">
+          <h4 class="footer__nav-title">Assistance</h4>
           <!-- Links -->
-          <div class="footer-links flex flex-col">
+          <div class="footer__nav-links">
             <a href="#" class="link-underline">Centre d'aide</a>
             <a href="#" class="link-underline">Nous contacter</a>
           </div>

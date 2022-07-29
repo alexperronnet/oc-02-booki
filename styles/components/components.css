@@ -1,5 +1,17 @@
 /*
 ====================
+Container
+====================
+*/
+
+.container {
+  width: calc(100% - 50px);
+  max-width: 1440px;
+  margin-inline: auto;
+}
+
+/*
+====================
 Links
 ====================
 */

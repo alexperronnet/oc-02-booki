@@ -1,19 +1,32 @@
-#footer .container {
+.footer {
+  background-color: var(--color-light-gray);
+}
+
+.footer__content {
+  display: flex;
   padding-top: 50px;
   padding-bottom: 50px;
 }
 
-.footer-nav {
+.footer__nav {
+  display: flex;
+  flex-direction: column;
   flex-basis: 33.333333%;
   gap: 24px;
 }
 
-.footer-links {
+.footer__nav-title {
+  font-weight: 700;
+}
+
+.footer__nav-links {
+  display: flex;
+  flex-direction: column;
   gap: 16px;
 }
 
 @media screen and (max-width: 896px) {
-  #footer .container {
+  .footer__content {
     flex-direction: column;
     gap: 32px;
   }

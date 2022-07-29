@@ -7,7 +7,6 @@
 @import url("./styles/base/fonts.css");
 @import url("./styles/base/reset.css");
 @import url("./styles/base/global.css");
-@import url("./styles/base/utilities.css");
 
 /* Components */
 @import url("./styles/components/components.css");
@@ -16,6 +15,7 @@
 @import url("./styles/components/activities-card.css");
 
 /* Layout */
+@import url("./styles/layout/banner-top.css");
 @import url("./styles/layout/header.css");
 @import url("./styles/layout/hero.css");
 @import url("./styles/layout/search-form.css");

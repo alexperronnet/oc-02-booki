@@ -1,42 +1,58 @@
 .filters {
+  display: flex;
+  align-items: center;
   gap: 32px;
 }
 
-.tags {
-  gap: 24px;
-  flex-wrap: wrap;
+.filters__title {
+  font-weight: 700;
 }
 
-.tag {
+.filters__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.filters__tag {
+  display: flex;
+  align-items: center;
   height: 50px;
   border: 2px solid var(--color-light-blue);
   border-radius: 25px;
   transition: all 200ms ease-out;
 }
 
-.tag-icon-wrapper {
+.filters__tag-label {
+  font-weight: 700;
+  font-size: 14px;
+  padding-inline: 12px 18px;
+}
+
+.filters__tag:hover {
+  color: var(--color-blue);
+  border-color: var(--color-blue);
+}
+
+.filters__tag:hover .filters__tag-icon-wrapper {
+  background-color: var(--color-blue);
+}
+
+.filters__tag:hover .icon-18 {
+  fill: var(--color-white);
+}
+
+.filters__tag-icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-light-blue);
+  color: var(--color-blue);
   width: 50px;
   height: 50px;
   border-radius: 25px;
   margin-left: -2px;
   transition: all 200ms ease-out;
-}
-
-.tag-label {
-  padding-inline: 12px 18px;
-}
-
-.tag:hover {
-  color: var(--color-blue);
-  border-color: var(--color-blue);
-}
-
-.tag:hover .tag-icon-wrapper {
-  background-color: var(--color-blue);
-}
-
-.tag:hover .icon-18 {
-  fill: var(--color-white);
 }
 
 @media screen and (max-width: 896px) {

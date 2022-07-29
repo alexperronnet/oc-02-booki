@@ -1,20 +1,31 @@
-.city {
+.lodgings__city {
   gap: 40px;
 }
 
-.city-grid {
+.lodgings__city-title {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.lodgings__city-grid {
+  display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 40px;
 }
 
+.lodgings__city .link-underline {
+  font-weight: 700;
+  font-size: 14px;
+}
+
 @media screen and (max-width: 1024px) {
-  .city-grid {
+  .lodgings__city-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
 @media screen and (max-width: 672px) {
-  .city-grid {
+  .lodgings__city-grid {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 }
