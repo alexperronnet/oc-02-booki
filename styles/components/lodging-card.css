@@ -4,27 +4,52 @@ Card main
 ====================
 */
 
-.lodging-card {
+.lodging__card {
+  background-color: var(--color-white);
   outline: 5px solid var(--color-white);
 }
 
-.lodging-card-text {
+.lodging__card-content {
+  display: flex;
+}
+
+.lodging__card-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.lodging__card-text {
+  display: flex;
+  flex-direction: column;
   gap: 5px;
 }
 
-.lodging-card-note {
+.lodging__card-text-title {
+  font-weight: 700;
+}
+
+.lodging__card-text-price {
+  font-size: 14px;
+}
+
+.lodging__card-text-price span {
+  font-weight: 700;
+}
+
+.lodging__card-note {
+  display: flex;
   gap: 2px;
 }
 
-.lodging-card-note .icon[data-active="true"] {
+.lodging__card-note .icon[data-active="true"] {
   fill: var(--color-blue);
 }
 
-.lodging-card-note .icon[data-active="false"] {
+.lodging__card-note .icon[data-active="false"] {
   fill: var(--color-gray);
 }
 
-.lodging-card-corner {
+.lodging__card-corner {
   position: absolute;
   top: 0;
   right: -50px;
@@ -35,13 +60,13 @@ Card main
   transition: all 200ms ease-out;
 }
 
-.lodging-card-corner .icon {
+.lodging__card-corner .icon {
   position: absolute;
   transform: skewX(-10deg);
   top: 10px;
 }
 
-.lodging-card:hover .lodging-card-corner {
+.lodging__card:hover .lodging__card-corner {
   right: -20px;
   transform: skewX(10deg);
 }
@@ -52,18 +77,22 @@ Card city
 ====================
 */
 
-.lodging-card-city .lodging-card-img {
+.lodging__card-city .lodging__card-content {
+  flex-direction: column;
+}
+
+.lodging__card-city .lodging__card-img {
   max-width: 100%;
   max-height: 100%;
   height: 125px;
 }
 
-.lodging-card-city .lodging-card-info {
+.lodging__card-city .lodging__card-info {
   gap: 10px;
   padding: 10px 25px;
 }
 
-.lodging-card-city .icon {
+.lodging__card-city .lodging__card-corner .icon {
   left: 15px;
 }
 
@@ -73,27 +102,30 @@ Card popular
 ====================
 */
 
-.lodging-card-popular,
-.lodging-card-popular .lodging-card-content,
-.lodging-card-popular .lodging-card-img {
+.lodging__card-popular,
+.lodging__card-popular .lodging__card-content,
+.lodging__card-popular .lodging__card-img {
   height: 100%;
 }
 
-.lodging-card-popular .lodging-card-img-wrapper {
+.lodging__card-popular .lodging__card-img-wrapper {
   position: relative;
   flex-basis: 35%;
 }
 
-.lodging-card-popular .lodging-card-img {
+.lodging__card-popular .lodging__card-img {
   position: absolute;
   height: 100%;
 }
 
-.lodging-card-popular .lodging-card-info {
+.lodging__card-popular .lodging__card-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   flex-basis: 65%;
   padding: 15px;
 }
 
-.lodging-card-popular .icon {
+.lodging__card-popular .lodging__card-corner .icon {
   left: 10px;
 }

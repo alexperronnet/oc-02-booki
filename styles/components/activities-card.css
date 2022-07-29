@@ -1,37 +1,46 @@
-.activities-card {
+.activities__card {
   position: relative;
   transition: all 200ms ease-out;
 }
 
-.activities-card:hover {
+.activities__card:hover {
   transform: rotate(2deg);
 }
 
-.activities-card figure {
+.activities__card-figure {
+  display: flex;
+  flex-direction: column;
   height: 100%;
 }
 
-.activities-card-img {
+.activities__card-img {
   height: calc(100% - 50px);
 }
 
-.activities-card-title {
+.activities__card-title {
+  display: flex;
+  align-items: center;
   height: 50px;
   padding-inline: 24px;
   gap: 2px;
 }
 
-.activities-card-title .icon {
+.activities__card-title-text {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.activities__card-title .icon {
   opacity: 0;
   transition: all 200ms ease-out;
 }
 
-.activities-card:hover .activities-card-title {
+.activities__card:hover .activities__card-title {
   fill: var(--color-blue);
   color: var(--color-blue);
 }
 
-.activities-card:hover .icon {
+.activities__card:hover .icon {
   opacity: 1;
   margin-left: 10px;
 }
