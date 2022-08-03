@@ -1,0 +1,27 @@
+/* Imports CSS files */
+
+/* Utils */
+@import url("./utils/variables.css");
+
+/* Base */
+@import url("./base/fonts.css");
+@import url("./base/reset.css");
+@import url("./base/global.css");
+
+/* Components */
+@import url("./components/components.css");
+@import url("./components/icons.css");
+@import url("./components/lodging-card.css");
+@import url("./components/activities-card.css");
+
+/* Layout */
+@import url("./layout/header.css");
+@import url("./layout/hero.css");
+@import url("./layout/search-form.css");
+@import url("./layout/filters.css");
+@import url("./layout/results.css");
+@import url("./layout/lodgings.css");
+@import url("./layout/city.css");
+@import url("./layout/popular.css");
+@import url("./layout/activities.css");
+@import url("./layout/footer.css");
