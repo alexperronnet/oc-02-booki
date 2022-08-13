@@ -43,7 +43,7 @@ Icons are from [Font Awesome](https://fontawesome.com/).
 Just clone this repo and use the live server to test the project.
 
 ```sh
-git glone https://github.com/alexperronnet/openclassrooms-p2-booki.git
+git clone https://github.com/alexperronnet/openclassrooms-p2-booki.git
 ```
 
 ```sh
