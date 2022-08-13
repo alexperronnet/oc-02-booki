@@ -28,7 +28,7 @@ The project is to create a prototype of the Booki website by integrating the HTM
 
 #### Colors
 
-The Colors are: `#0065FC`, `#DEEBFF`, `#F2F2F2`
+The colors are: `#0065FC`, `#DEEBFF`, `#F2F2F2`
 
 #### Font
 
