@@ -1,4 +1,4 @@
-# Booki Test
+# Booki
 
 ![Booki preview](./assets/preview.png)
 
