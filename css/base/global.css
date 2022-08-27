@@ -10,3 +10,27 @@ body {
   color: var(--color-blue);
   background-color: var(--color-light-blue);
 }
+
+.repo-link {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  padding: 0.75rem;
+  background-color: #0f172a;
+  border-radius: 50%;
+  z-index: 999;
+  transition: transform 150ms ease-in-out;
+  transition: 150ms ease-in-out;
+  transition-property: transform color;
+}
+
+.repo-link svg {
+  width: 24px;
+  aspect-ratio: 1 / 1;
+  fill: #f1f5f9;
+}
+
+.repo-link:hover {
+  background-color: #3b82f6;
+  transform: translateY(-0.25rem);
+}
