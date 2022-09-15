@@ -55,8 +55,8 @@ Card
 .card-basic {
   overflow: hidden;
   border-radius: 16px;
-  filter: drop-shadow(0 20px 13px rgb(0 0 0 / 0.03))
-    drop-shadow(0 8px 5px rgb(0 0 0 / 0.08));
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+    0 8px 10px -6px rgb(0 0 0 / 0.1);
 }
 
 .card-basic img {
