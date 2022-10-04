@@ -58,4 +58,4 @@ If you are also a student of OC, you can freely use my work as inspiration, but 
 
 ---
 
-See the [live URL](https://alexperronnet.github.io/openclassrooms-p2-booki/)
+See the [live URL](https://booki.alexperronnet.dev)
