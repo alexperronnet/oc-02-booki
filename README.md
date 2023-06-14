@@ -1,5 +1,7 @@
 # Booki
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e78195b2-3c75-446c-aab9-1cf58eaf7218/deploy-status)](https://app.netlify.com/sites/openclassrooms-02-booki/deploys)
+
 > **Disclaimer**: This repository houses a project undertaken as part of my "**JavaScript React Developer**" training program with [OpenClassrooms](https://openclassrooms.com/). Upon the conclusion of the program on **September 20th, 2023**, the project will no longer be updated or maintained.
 
 ![Booki preview](./assets/preview.png)
