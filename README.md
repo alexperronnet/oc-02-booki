@@ -1,6 +1,6 @@
 # Booki
 
-> **Disclaimer**: This repository houses a project undertaken as part of my **Developer of Applications - JavaScript React** training program with [OpenClassrooms](https://openclassrooms.com/). Upon the conclusion of the program on September 20th, 2023, the project will no longer be updated or maintained.
+> **Disclaimer**: This repository houses a project undertaken as part of my **Developer of Applications - JavaScript React** training program with [OpenClassrooms](https://openclassrooms.com/). Upon the conclusion of the program on **September 20th, 2023**, the project will no longer be updated or maintained.
 
 ![Booki preview](./assets/preview.png)
 
