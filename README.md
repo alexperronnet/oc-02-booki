@@ -1,6 +1,6 @@
 # Booki
 
-> **Disclaimer**: This repository houses a project undertaken as part of my **Developer of Applications - JavaScript React** training program with [OpenClassrooms](https://openclassrooms.com/). Upon the conclusion of the program on **September 20th, 2023**, the project will no longer be updated or maintained.
+> **Disclaimer**: This repository houses a project undertaken as part of my "**JavaScript React Developer**" training program with [OpenClassrooms](https://openclassrooms.com/). Upon the conclusion of the program on **September 20th, 2023**, the project will no longer be updated or maintained.
 
 ![Booki preview](./assets/preview.png)
 
@@ -59,5 +59,3 @@ This is an OpenClassrooms project. The code is freely reusable, but assets (imag
 If you are also a student of OC, you can freely use my work as inspiration, but I advise you not to copy parts of it.
 
 ---
-
-See the [live URL](https://booki.alexperronnet.dev)
