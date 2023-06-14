@@ -47,11 +47,11 @@ Icons are from [Font Awesome](https://fontawesome.com/).
 Just clone this repo and use the live server to test the project.
 
 ```sh
-git clone https://github.com/alexperronnet/openclassrooms-p2-booki.git
+git clone https://github.com/alexperronnet/openclassrooms-02-booki.git
 ```
 
 ```sh
-cd openclassrooms-p2-booki
+cd openclassrooms-02-booki
 ```
 
 ## License
